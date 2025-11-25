@@ -24,7 +24,7 @@ Repository ini mendokumentasikan proses *hardening* pada sistem operasi Ubuntu. 
 ## 💻 Lingkungan Sistem
 * **OS:** Ubuntu Server 20.04 LTS (Running on VirtualBox)
 * **RAM:** 8GB
-* **Tools:** Virtual Machine, Lynis v3.x, Fail2Ban v0.11
+* **Tools:** Virtual Machine, Lynis v3.0.9, Fail2Ban v0.11
 
 ---
 
