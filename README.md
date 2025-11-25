@@ -7,12 +7,12 @@
 > Studi kasus implementasi keamanan server menggunakan Lynis untuk vulnerability assessment dan Fail2Ban untuk pencegahan intrusi.
 
 ## 📋 Daftar Isi
-- [Tentang Proyek](#tentang-proyek)
-- [Lingkungan Sistem](#lingkungan-sistem)
-- [Instalasi & Konfigurasi](#instalasi--konfigurasi)
-- [Hasil Audit (Lynis)](#hasil-audit-lynis)
-- [Pengujian Keamanan (Fail2Ban)](#pengujian-keamanan-fail2ban)
-- [Kesimpulan](#kesimpulan)
+- [Minggu 1](#Minggu_1)
+- [Minggu 2](#Minggu_2)
+- [Minggu 3](#Minggu_3)
+- [Minggu 4](#Minggu_4)
+- [Minggu 5](#Minggu_5)
+- [Minggu 6](#Minggu_6)
 
 ---
 
