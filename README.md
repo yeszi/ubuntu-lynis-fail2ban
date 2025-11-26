@@ -29,8 +29,7 @@
 
 ---
 
-## 🧐 Tentang Proyek
-Repository ini mendokumentasikan proses *hardening* pada sistem operasi Ubuntu. Tujuan utamanya adalah:
+## 🧐 Tujuan Proyek
 1. Meningkatkan keamanan OS dan mengaudit kerentanan konfigurasi.
 
 ## 💻 Lingkungan Sistem
