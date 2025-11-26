@@ -6,12 +6,21 @@
 
 > Studi kasus Proyek 3: Hardening Sistem Linux dan Audit Keamanan
 
+## 🛡️ Anggota Tim
+
+**Nama Tim:** Kelompok 3
+
+Daftar Kontributor:
+* **[Grayesi Silitonga]** - (NIM: 2201020130)
+* **[Yohani Natalia Simanullang]** - (NIM: 2201020092)
+* **[Winda Aulia Ariyani]** - (NIM: 2201020083)
+* **[Enjelita Br Ginting]** - (NIM: 2201020035)
+
 ## 📋 Dokumentasi Per-Minggu 
 -  [Minggu 1](#Minggu_1)  Instalasi Linux (VM) Baseline Audit
 ![Minggu 1](./Minggu%201/lynis_baseline.png)
 
 - [Minggu 2](#Minggu_2) Konfigurasi User &amp; Permission Management
-![Minggu 2](./Minggu%202/)
 
 - [Minggu 3](#Minggu_3) Konfigurasi Firewall (UFW / iptables)
   
