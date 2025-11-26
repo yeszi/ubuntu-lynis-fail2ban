@@ -7,8 +7,9 @@
 > Studi kasus implementasi keamanan server menggunakan Lynis untuk vulnerability assessment dan Fail2Ban untuk pencegahan intrusi.
 
 ## 📋 Daftar Isi
-- [Minggu 1](#Minggu_1)
-- [Minggu 2](#Minggu_2)
+- [Minggu 1](./Minggu 1/lynis_baseline.png)  Instalasi Linux (VM) &amp; baseline audit
+- [Minggu 2](#Minggu_2) Konfigurasi User &amp; Permission
+Management
 - [Minggu 3](#Minggu_3)
 - [Minggu 4](#Minggu_4)
 - [Minggu 5](#Minggu_5)
@@ -24,7 +25,7 @@ Repository ini mendokumentasikan proses *hardening* pada sistem operasi Ubuntu. 
 ## 💻 Lingkungan Sistem
 * **OS:** Ubuntu Server 20.04 LTS (Running on VirtualBox)
 * **RAM:** 8GB
-* **Tools:** Virtual Machine, Lynis v3.0.9, Fail2Ban v0.11
+* **Tools:**  Lynis v3.0.9, Fail2Ban v0.11
 
 ---
 
