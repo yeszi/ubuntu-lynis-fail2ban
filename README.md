@@ -4,7 +4,7 @@
 ![Lynis](https://img.shields.io/badge/Security-Lynis_Audit-blue)
 ![Fail2Ban](https://img.shields.io/badge/Protection-Fail2Ban-red)
 
-> Studi kasus implementasi keamanan server menggunakan Lynis untuk vulnerability assessment dan Fail2Ban untuk pencegahan intrusi.
+> Studi kasus Proyek 3: Hardening Sistem Linux dan Audit Keamanan
 
 ## 📋 Dokumentasi Per-Minggu 
 -  [Minggu 1](#Minggu_1)  Instalasi Linux (VM) Baseline Audit
@@ -13,17 +13,19 @@
 - [Minggu 2](#Minggu_2) Konfigurasi User &amp; Permission Management
 ![Minggu 2](./Minggu%202/)
 
-- [Minggu 3](#Minggu_3)
-- [Minggu 4](#Minggu_4)
-- [Minggu 5](#Minggu_5)
-- [Minggu 6](#Minggu_6)
+- [Minggu 3](#Minggu_3) Konfigurasi Firewall (UFW / iptables)
+  
+- [Minggu 4](#Minggu_4) Hardening SSH + fail2ban
+  
+- [Minggu 5](#Minggu_5) Audit ulang &amp; scoring keamanan (Lynis)
+  
+- [Minggu 6](#Minggu_6) Dokumentasi &amp; presentasi
 
 ---
 
 ## 🧐 Tentang Proyek
 Repository ini mendokumentasikan proses *hardening* pada sistem operasi Ubuntu. Tujuan utamanya adalah:
-1. Mengidentifikasi celah keamanan sistem menggunakan **Lynis**.
-2. Memitigasi serangan *brute-force* pada SSH menggunakan **Fail2Ban**.
+1. Meningkatkan keamanan OS dan mengaudit kerentanan konfigurasi.
 
 ## 💻 Lingkungan Sistem
 * **OS:** Ubuntu Server 20.04 LTS (Running on VirtualBox)
