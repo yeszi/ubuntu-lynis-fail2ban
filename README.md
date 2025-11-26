@@ -8,10 +8,10 @@
 
 ## 🛡️ Anggota Tim
 **Nama Tim** Kelompok 3 :
-* **Grayesi Silitonga** - NIM: 2201020130
-* **Yohani N Simanullang** - NIM: 2201020092
-* **Winda Aulia Ariyani** - NIM: 2201020083
-* **Enjelita Br Ginting** - NIM: 2201020035
+* **Grayesi Silitonga** - 2201020130
+* **Yohani N Simanullang** - 2201020092
+* **Winda Aulia Ariyani** - 2201020083
+* **Enjelita Br Ginting** - 2201020035
 
 ## 📋 Dokumentasi Per-Minggu 
 -  [Minggu 1](#Minggu_1)  Instalasi Linux (VM) Baseline Audit
