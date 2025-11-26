@@ -7,7 +7,7 @@
 > Studi kasus implementasi keamanan server menggunakan Lynis untuk vulnerability assessment dan Fail2Ban untuk pencegahan intrusi.
 
 ## 📋 Daftar Isi
-- [Minggu 1](./Minggu 1/lynis_baseline.png)  Instalasi Linux (VM) &amp; baseline audit
+![Minggu 1](./Minggu%201/lynis_baseline.png)
 - [Minggu 2](#Minggu_2) Konfigurasi User &amp; Permission
 Management
 - [Minggu 3](#Minggu_3)
