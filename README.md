@@ -4,17 +4,15 @@
 ![Lynis](https://img.shields.io/badge/Security-Lynis_Audit-blue)
 ![Fail2Ban](https://img.shields.io/badge/Protection-Fail2Ban-red)
 
-> Studi kasus Proyek 3: Hardening Sistem Linux dan Audit Keamanan
+> **Studi kasus Proyek 3**: Hardening Sistem Linux dan Audit Keamanan
 
 ## 🛡️ Anggota Tim
-
 **Nama Tim:** Kelompok 3
-
 Daftar Kontributor:
-* **[Grayesi Silitonga]** - (NIM: 2201020130)
-* **[Yohani Natalia Simanullang]** - (NIM: 2201020092)
-* **[Winda Aulia Ariyani]** - (NIM: 2201020083)
-* **[Enjelita Br Ginting]** - (NIM: 2201020035)
+* **Grayesi Silitonga** - NIM: 2201020130
+* **Yohani N Simanullang** - NIM: 2201020092
+* **Winda Aulia Ariyani** - NIM: 2201020083
+* **Enjelita Br Ginting** - NIM: 2201020035
 
 ## 📋 Dokumentasi Per-Minggu 
 -  [Minggu 1](#Minggu_1)  Instalasi Linux (VM) Baseline Audit
