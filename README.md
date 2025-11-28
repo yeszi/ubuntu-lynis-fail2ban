@@ -9,7 +9,7 @@
 ## 🛡️ Anggota Tim
 **Nama Tim** Kelompok 3 :
 * **Grayesi Silitonga** - 2201020130
-* **Yohani N Simanullang** - 2201020092
+* **Yohani Natalia.S** - 2201020091
 * **Winda Aulia Ariyani** - 2201020083
 * **Enjelita Br Ginting** - 2201020035
 
