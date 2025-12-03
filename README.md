@@ -58,3 +58,37 @@ cd lynis && chmod +x lynis
 
 # Jalankan audit sistem
 sudo ./lynis audit system
+
+### 2. Konfigurasi Firewall UFW
+
+```bash
+# Instal UFW (jika belum ada)
+sudo apt install ufw
+
+# Atur kebijakan default (Tolak masuk, Izinkan keluar)
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+
+# Izinkan akses SSH pada Port Custom (2222)
+# Catatan: Sesuaikan dengan port SSH yang akan digunakan
+sudo ufw allow 2222/tcp
+
+# Aktifkan Firewall
+sudo ufw enable
+
+# Cek status aturan
+sudo ufw status verbose
+
+### 3. Hardening SSH Server
+
+```bash
+sudo nano /etc/ssh/sshd_config
+
+//cuplikan code
+Port 2222                 # Ubah port default (22) ke 2222 (Security by Obscurity)
+PermitRootLogin no        # Matikan login root
+PubkeyAuthentication yes  # Wajibkan penggunaan SSH Key
+PasswordAuthentication no # (Opsional) Matikan login password jika SSH Key sudah aktif
+
+```bash
+sudo systemctl restart ssh
