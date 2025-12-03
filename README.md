@@ -14,6 +14,17 @@
 
 ## 📋 Dokumentasi Setiap Minggu 
 -  [Minggu 1](#Minggu_1)  Instalasi Linux (VM) Baseline Audit
+Perintah untuk menginstal dan menjalankan audit sistem:
+```javascript
+# Clone repository Lynis
+git clone https://github.com/CISOfy/lynis
+
+# Masuk ke direktori
+cd lynis && chmod +x lynis
+
+# Jalankan audit sistem
+sudo ./lynis audit system
+```
 ![Minggu 1](./Minggu%201/lynis_baseline.png)
 
 - [Minggu 2](#Minggu_2) Konfigurasi User &amp; Permission Management
@@ -24,8 +35,8 @@
 ![Minggu 3](./Minggu%203/atur_policy_default_dan_membuka_port_2222_untuk_ssh.png)
 
 - [Minggu 4](#Minggu_4) Hardening SSH + fail2ban
-  ![Minggu 4](./Minggu%204/konfigurasi_ssh_dan_statusnya.png)
-  ![Minggu 4](./Minggu%204/instal_faillban.png)
+![Minggu 4](./Minggu%204/konfigurasi_ssh_dan_statusnya.png)
+![Minggu 4](./Minggu%204/instal_faillban.png)
 
 - [Minggu 5](#Minggu_5) Audit ulang &amp; scoring keamanan (Lynis)
 ![Minggu 5](./Minggu%205/audit_lynis.png)
