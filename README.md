@@ -8,12 +8,12 @@
 
 ## 🛡️ Anggota Tim
 **Nama Tim** Kelompok 3 :
-* **Grayesi Silitonga** - 2201020130
-* **Yohani Natalia.S** - 2201020091
-* **Winda Aulia Ariyani** - 2201020083
-* **Enjelita Br Ginting** - 2201020035
+* **2201020130** - Grayesi Silitonga
+* **2201020091** - Yohani Natalia Simanullang
+* **2201020083** - Winda Aulia Ariyani
+* **2201020035** - Enjelita Br Ginting
 
-## 📋 Dokumentasi Per-Minggu 
+## 📋 Dokumentasi Setiap Minggu 
 -  [Minggu 1](#Minggu_1)  Instalasi Linux (VM) Baseline Audit
 ![Minggu 1](./Minggu%201/lynis_baseline.png)
 
