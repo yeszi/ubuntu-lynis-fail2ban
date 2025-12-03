@@ -6,8 +6,7 @@
 
 > **Studi kasus Proyek 3**: Hardening Sistem Linux dan Audit Keamanan
 
-## 🛡️ Anggota Tim
-**Nama Tim** Kelompok 3 :
+## 🛡️ Anggota Tim Kelompok 3
 * **2201020130**  Grayesi Silitonga
 * **2201020091**  Yohani Natalia Simanullang
 * **2201020083**  Winda Aulia Ariyani
@@ -49,7 +48,7 @@
 ## 1. Setup Lynis
 Perintah untuk menginstal dan menjalankan audit sistem:
 
-```bash
+```javascript
 # Clone repository Lynis
 git clone https://github.com/CISOfy/lynis
 
@@ -58,12 +57,11 @@ cd lynis && chmod +x lynis
 
 # Jalankan audit sistem
 sudo ./lynis audit system
-
----
+```
 
 ## 2. Konfigurasi Firewall UFW
 
-```bash
+```javascript
 # Instal UFW (jika belum ada)
 sudo apt install ufw
 
@@ -80,12 +78,11 @@ sudo ufw enable
 
 # Cek status aturan
 sudo ufw status verbose
-
----
+```
 
 ## 3. Hardening SSH Server
 
-```bash
+```javascript
 sudo nano /etc/ssh/sshd_config
 
 //cuplikan code
@@ -96,11 +93,11 @@ PasswordAuthentication no # (Opsional) Matikan login password jika SSH Key sudah
 
 sudo systemctl restart ssh
 
----
+```
 
 ## 4. Instalasi & Konfigurasi Fail2ban
 
-```bash
+```javascript
 # Instal Fail2Ban
 sudo apt update && sudo apt install fail2ban -y
 
@@ -122,11 +119,11 @@ bantime = 3600            # Blokir selama 1 jam
 sudo systemctl enable fail2ban
 sudo systemctl start fail2ban
 
----
+```
 
 ## 5. Verifikasi dan Audit Akhir
 
-```bash
+```javascript
 # Cek status Fail2Ban (pastikan Jail SSH aktif)
 sudo fail2ban-client status sshd
 
@@ -134,4 +131,4 @@ sudo fail2ban-client status sshd
 cd lynis
 sudo ./lynis audit system
 
----
+```
