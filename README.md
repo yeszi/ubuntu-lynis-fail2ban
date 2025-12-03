@@ -8,10 +8,10 @@
 
 ## 🛡️ Anggota Tim
 **Nama Tim** Kelompok 3 :
-* **2201020130** - Grayesi Silitonga
-* **2201020091** - Yohani Natalia Simanullang
-* **2201020083** - Winda Aulia Ariyani
-* **2201020035** - Enjelita Br Ginting
+* **2201020130**  Grayesi Silitonga
+* **2201020091**  Yohani Natalia Simanullang
+* **2201020083**  Winda Aulia Ariyani
+* **2201020035**  Enjelita Br Ginting
 
 ## 📋 Dokumentasi Setiap Minggu 
 -  [Minggu 1](#Minggu_1)  Instalasi Linux (VM) Baseline Audit
@@ -59,6 +59,8 @@ cd lynis && chmod +x lynis
 # Jalankan audit sistem
 sudo ./lynis audit system
 
+---
+
 ### 2. Konfigurasi Firewall UFW
 
 ```bash
@@ -92,3 +94,37 @@ PasswordAuthentication no # (Opsional) Matikan login password jika SSH Key sudah
 
 ```bash
 sudo systemctl restart ssh
+
+### 4. Instalasi & Konfigurasi Fail2ban
+
+```bash
+# Instal Fail2Ban
+sudo apt update && sudo apt install fail2ban -y
+
+# Salin konfigurasi default agar aman saat update
+sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
+
+# Edit konfigurasi jail.local
+sudo nano /etc/fail2ban/jail.local
+
+//TOML
+[sshd]
+enabled = true
+port    = 2222            # Wajib sesuaikan dengan port SSH yang baru
+logpath = %(sshd_log)s
+backend = %(sshd_backend)s
+maxretry = 3              # Blokir setelah 3x gagal login
+bantime = 3600            # Blokir selama 1 jam
+
+sudo systemctl enable fail2ban
+sudo systemctl start fail2ban
+
+### 5. Verifikasi dan Audit Akhir
+
+```bash
+# Cek status Fail2Ban (pastikan Jail SSH aktif)
+sudo fail2ban-client status sshd
+
+# Jalankan audit ulang dengan Lynis
+cd lynis
+sudo ./lynis audit system
