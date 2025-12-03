@@ -26,7 +26,7 @@
 
 - [Minggu 4](#Minggu_4) Hardening SSH + fail2ban
   ![Minggu 4](./Minggu%204/konfigurasi_ssh_dan_statusnya.png)
-  ![Minggu 4](./Minggu%204/install_faillban.png)
+  ![Minggu 4](./Minggu%204/instal_faillban.png)
 
 - [Minggu 5](#Minggu_5) Audit ulang &amp; scoring keamanan (Lynis)
 ![Minggu 5](./Minggu%205/audit_lynis.png)
