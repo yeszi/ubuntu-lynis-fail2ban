@@ -46,8 +46,6 @@
 
 ## ⚙️ Instalasi & Konfigurasi
 
----
-
 ## 1. Setup Lynis
 Perintah untuk menginstal dan menjalankan audit sistem:
 
