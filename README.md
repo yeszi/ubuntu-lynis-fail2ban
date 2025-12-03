@@ -27,7 +27,7 @@ sudo ./lynis audit system
 ![Minggu 1](./Minggu%201/lynis_baseline.png)
 
 - [Minggu 2](#Minggu_2) Konfigurasi User &amp; Permission Management
-
+-  **Cek Konfigurasi**
 ```javascript
 # Instal UFW (jika belum ada)
 sudo apt install ufw
@@ -46,11 +46,11 @@ sudo ufw enable
 # Cek status aturan
 sudo ufw status verbose
 ```
--  **Cek Konfigurasi**
 ![Minggu 2](./Minggu%202/atur_konfigurasi.jpg)
 
 - [Minggu 3](#Minggu_3) Konfigurasi Firewall (UFW / iptables)
-
+-  **Cek SSH**
+-  
 ```javascript
 sudo nano /etc/ssh/sshd_config
 
@@ -63,7 +63,7 @@ PasswordAuthentication no # (Opsional) Matikan login password jika SSH Key sudah
 sudo systemctl restart ssh
 
 ```
--  **Cek SSH**
+
 ![Minggu 3](./Minggu%203/mengaktifkan_ufw_dan_mengecek_status_rule.png)
 ![Minggu 3](./Minggu%203/atur_policy_default_dan_membuka_port_2222_untuk_ssh.png)
 
