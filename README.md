@@ -46,7 +46,9 @@
 
 ## ⚙️ Instalasi & Konfigurasi
 
-### 1. Setup Lynis
+---
+
+## 1. Setup Lynis
 Perintah untuk menginstal dan menjalankan audit sistem:
 
 ```bash
@@ -61,7 +63,7 @@ sudo ./lynis audit system
 
 ---
 
-### 2. Konfigurasi Firewall UFW
+## 2. Konfigurasi Firewall UFW
 
 ```bash
 # Instal UFW (jika belum ada)
@@ -81,7 +83,9 @@ sudo ufw enable
 # Cek status aturan
 sudo ufw status verbose
 
-### 3. Hardening SSH Server
+---
+
+## 3. Hardening SSH Server
 
 ```bash
 sudo nano /etc/ssh/sshd_config
@@ -92,10 +96,11 @@ PermitRootLogin no        # Matikan login root
 PubkeyAuthentication yes  # Wajibkan penggunaan SSH Key
 PasswordAuthentication no # (Opsional) Matikan login password jika SSH Key sudah aktif
 
-```bash
 sudo systemctl restart ssh
 
-### 4. Instalasi & Konfigurasi Fail2ban
+---
+
+## 4. Instalasi & Konfigurasi Fail2ban
 
 ```bash
 # Instal Fail2Ban
@@ -119,7 +124,9 @@ bantime = 3600            # Blokir selama 1 jam
 sudo systemctl enable fail2ban
 sudo systemctl start fail2ban
 
-### 5. Verifikasi dan Audit Akhir
+---
+
+## 5. Verifikasi dan Audit Akhir
 
 ```bash
 # Cek status Fail2Ban (pastikan Jail SSH aktif)
@@ -128,3 +135,5 @@ sudo fail2ban-client status sshd
 # Jalankan audit ulang dengan Lynis
 cd lynis
 sudo ./lynis audit system
+
+---
