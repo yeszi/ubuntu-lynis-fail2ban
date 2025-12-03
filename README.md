@@ -1,10 +1,8 @@
-# 🛡️ Ubuntu Security Hardening: Lynis & Fail2Ban
+# 🛡️ Studi kasus Proyek 3 : Hardening Sistem Linux dan Audit Keamanan
 
 ![Ubuntu](https://img.shields.io/badge/OS-Ubuntu_Server-orange)
 ![Lynis](https://img.shields.io/badge/Security-Lynis_Audit-blue)
 ![Fail2Ban](https://img.shields.io/badge/Protection-Fail2Ban-red)
-
-> **Studi kasus Proyek 3**: Hardening Sistem Linux dan Audit Keamanan
 
 ## 🛡️ Anggota Tim Kelompok 3
 * **2201020130**  Grayesi Silitonga
@@ -14,7 +12,7 @@
 
 ## 📋 Dokumentasi Setiap Minggu 
 -  [Minggu 1](#Minggu_1)  Instalasi Linux (VM) Baseline Audit
--  **Perintah untuk menginstal dan menjalankan audit sistem:**
+
 ```javascript
 # Clone repository Lynis
 git clone https://github.com/CISOfy/lynis
@@ -25,10 +23,11 @@ cd lynis && chmod +x lynis
 # Jalankan audit sistem
 sudo ./lynis audit system
 ```
+-  **Perintah untuk menginstal dan menjalankan audit sistem:**
 ![Minggu 1](./Minggu%201/lynis_baseline.png)
 
 - [Minggu 2](#Minggu_2) Konfigurasi User &amp; Permission Management
-**Atur Konfigurasi**
+
 ```javascript
 # Instal UFW (jika belum ada)
 sudo apt install ufw
@@ -47,11 +46,12 @@ sudo ufw enable
 # Cek status aturan
 sudo ufw status verbose
 ```
+**Atur Konfigurasi**
 ![Minggu 2](./Minggu%202/atur_konfigurasi.jpg)
 
 - [Minggu 3](#Minggu_3) Konfigurasi Firewall (UFW / iptables)
-  **Cek SSH**
-  ```javascript
+
+```javascript
 sudo nano /etc/ssh/sshd_config
 
 //cuplikan code
@@ -61,12 +61,13 @@ PubkeyAuthentication yes  # Wajibkan penggunaan SSH Key
 PasswordAuthentication no # (Opsional) Matikan login password jika SSH Key sudah aktif
 
 sudo systemctl restart ssh
-
 ```
+  **Cek SSH**
 ![Minggu 3](./Minggu%203/mengaktifkan_ufw_dan_mengecek_status_rule.png)
 ![Minggu 3](./Minggu%203/atur_policy_default_dan_membuka_port_2222_untuk_ssh.png)
 
 - [Minggu 4](#Minggu_4) Hardening SSH + fail2ban
+  
 ```javascript
 # Instal Fail2Ban
 sudo apt update && sudo apt install fail2ban -y
@@ -90,10 +91,12 @@ sudo systemctl enable fail2ban
 sudo systemctl start fail2ban
 
 ```
+
 ![Minggu 4](./Minggu%204/konfigurasi_ssh_dan_statusnya.png)
 ![Minggu 4](./Minggu%204/instal_faillban.png)
 
 - [Minggu 5](#Minggu_5) Audit ulang &amp; scoring keamanan (Lynis)
+
 ```javascript
 # Cek status Fail2Ban (pastikan Jail SSH aktif)
 sudo fail2ban-client status sshd
