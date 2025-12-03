@@ -46,7 +46,7 @@ sudo ufw enable
 # Cek status aturan
 sudo ufw status verbose
 ```
-**Atur Konfigurasi**
+- **Atur Konfigurasi**
 ![Minggu 2](./Minggu%202/atur_konfigurasi.jpg)
 
 - [Minggu 3](#Minggu_3) Konfigurasi Firewall (UFW / iptables)
@@ -61,8 +61,9 @@ PubkeyAuthentication yes  # Wajibkan penggunaan SSH Key
 PasswordAuthentication no # (Opsional) Matikan login password jika SSH Key sudah aktif
 
 sudo systemctl restart ssh
+
 ```
-  **Cek SSH**
+- **Cek SSH**
 ![Minggu 3](./Minggu%203/mengaktifkan_ufw_dan_mengecek_status_rule.png)
 ![Minggu 3](./Minggu%203/atur_policy_default_dan_membuka_port_2222_untuk_ssh.png)
 
