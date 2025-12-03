@@ -14,7 +14,7 @@
 
 ## 📋 Dokumentasi Setiap Minggu 
 -  [Minggu 1](#Minggu_1)  Instalasi Linux (VM) Baseline Audit
-Perintah untuk menginstal dan menjalankan audit sistem:
+-  **Perintah untuk menginstal dan menjalankan audit sistem:**
 ```javascript
 # Clone repository Lynis
 git clone https://github.com/CISOfy/lynis
@@ -28,50 +28,7 @@ sudo ./lynis audit system
 ![Minggu 1](./Minggu%201/lynis_baseline.png)
 
 - [Minggu 2](#Minggu_2) Konfigurasi User &amp; Permission Management
-![Minggu 2](./Minggu%202/atur_konfigurasi.jpg)
-
-- [Minggu 3](#Minggu_3) Konfigurasi Firewall (UFW / iptables)
-![Minggu 3](./Minggu%203/mengaktifkan_ufw_dan_mengecek_status_rule.png)
-![Minggu 3](./Minggu%203/atur_policy_default_dan_membuka_port_2222_untuk_ssh.png)
-
-- [Minggu 4](#Minggu_4) Hardening SSH + fail2ban
-![Minggu 4](./Minggu%204/konfigurasi_ssh_dan_statusnya.png)
-![Minggu 4](./Minggu%204/instal_faillban.png)
-
-- [Minggu 5](#Minggu_5) Audit ulang &amp; scoring keamanan (Lynis)
-![Minggu 5](./Minggu%205/audit_lynis.png)
-![Minggu 5](./Minggu%205/setelah_hardening.jpg)
-
----
-
-## 🧐 Tujuan Proyek
-1. Meningkatkan keamanan OS dan mengaudit kerentanan konfigurasi.
-
-## 💻 Lingkungan Sistem
-* **OS:** Ubuntu Server 20.04 LTS (Running on VirtualBox)
-* **RAM:** 8GB
-* **Tools:**  Lynis v3.0.9, Fail2Ban v0.11
-
----
-
-## ⚙️ Instalasi & Konfigurasi
-
-## 1. Setup Lynis
-Perintah untuk menginstal dan menjalankan audit sistem:
-
-```javascript
-# Clone repository Lynis
-git clone https://github.com/CISOfy/lynis
-
-# Masuk ke direktori
-cd lynis && chmod +x lynis
-
-# Jalankan audit sistem
-sudo ./lynis audit system
-```
-
-## 2. Konfigurasi Firewall UFW
-
+**Atur Konfigurasi**
 ```javascript
 # Instal UFW (jika belum ada)
 sudo apt install ufw
@@ -90,10 +47,11 @@ sudo ufw enable
 # Cek status aturan
 sudo ufw status verbose
 ```
+![Minggu 2](./Minggu%202/atur_konfigurasi.jpg)
 
-## 3. Hardening SSH Server
-
-```javascript
+- [Minggu 3](#Minggu_3) Konfigurasi Firewall (UFW / iptables)
+  **Cek SSH**
+  ```javascript
 sudo nano /etc/ssh/sshd_config
 
 //cuplikan code
@@ -105,9 +63,10 @@ PasswordAuthentication no # (Opsional) Matikan login password jika SSH Key sudah
 sudo systemctl restart ssh
 
 ```
+![Minggu 3](./Minggu%203/mengaktifkan_ufw_dan_mengecek_status_rule.png)
+![Minggu 3](./Minggu%203/atur_policy_default_dan_membuka_port_2222_untuk_ssh.png)
 
-## 4. Instalasi & Konfigurasi Fail2ban
-
+- [Minggu 4](#Minggu_4) Hardening SSH + fail2ban
 ```javascript
 # Instal Fail2Ban
 sudo apt update && sudo apt install fail2ban -y
@@ -131,9 +90,10 @@ sudo systemctl enable fail2ban
 sudo systemctl start fail2ban
 
 ```
+![Minggu 4](./Minggu%204/konfigurasi_ssh_dan_statusnya.png)
+![Minggu 4](./Minggu%204/instal_faillban.png)
 
-## 5. Verifikasi dan Audit Akhir
-
+- [Minggu 5](#Minggu_5) Audit ulang &amp; scoring keamanan (Lynis)
 ```javascript
 # Cek status Fail2Ban (pastikan Jail SSH aktif)
 sudo fail2ban-client status sshd
@@ -143,3 +103,19 @@ cd lynis
 sudo ./lynis audit system
 
 ```
+![Minggu 5](./Minggu%205/audit_lynis.png)
+![Minggu 5](./Minggu%205/setelah_hardening.jpg)
+
+---
+
+## 🧐 Tujuan Proyek
+1. Meningkatkan keamanan OS dan mengaudit kerentanan konfigurasi.
+
+## 💻 Lingkungan Sistem
+* **OS:** Ubuntu Server 20.04 LTS (Running on VirtualBox)
+* **RAM:** 8GB
+* **Tools:**  Lynis v3.0.9, Fail2Ban v0.11
+
+---
+
+
