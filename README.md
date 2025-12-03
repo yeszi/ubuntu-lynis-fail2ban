@@ -18,19 +18,19 @@
 ![Minggu 1](./Minggu%201/lynis_baseline.png)
 
 - [Minggu 2](#Minggu_2) Konfigurasi User &amp; Permission Management
-![Minggu 2](./Minggu%202/atur konfigurasi.jpg)
+![Minggu 2](./Minggu%202/atur_konfigurasi.jpg)
 
 - [Minggu 3](#Minggu_3) Konfigurasi Firewall (UFW / iptables)
-![Minggu 3](./Minggu%203/Mengaktifkan UFW dan mengecek status rule.png)
-![Minggu 3](./Minggu%203/Atur policy default dan membuka port 2222 untuk SSH.png)
+![Minggu 3](./Minggu%203/mengaktifkan_ufw_dan_mengecek_status_rule.png)
+![Minggu 3](./Minggu%203/atur_policy_default_dan_membuka_port_2222_untuk_ssh.png)
 
 - [Minggu 4](#Minggu_4) Hardening SSH + fail2ban
-  ![Minggu 4](./Minggu%204/Konfigurasi SSH dan status servicenya.png)
-  ![Minggu 4](./Minggu%204/install faillban.png)
+  ![Minggu 4](./Minggu%204/konfigurasi_ssh_dan_statusnya.png)
+  ![Minggu 4](./Minggu%204/install_faillban.png)
 
 - [Minggu 5](#Minggu_5) Audit ulang &amp; scoring keamanan (Lynis)
-![Minggu 5](./Minggu%205/audit lynis.png)
-![Minggu 5](./Minggu%205/setelah hardening.jpg)
+![Minggu 5](./Minggu%205/audit_lynis.png)
+![Minggu 5](./Minggu%205/setelah_hardening.jpg)
 
 ---
 
