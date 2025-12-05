@@ -11,6 +11,7 @@
 * **2201020035**  Enjelita Br Ginting
 
 ## 📋 Dokumentasi Setiap Minggu 
+-  [Link Laporan ](#Link_Laporan)  **(https://docs.google.com/document/d/1Spr3Pornr0vmMOBRrYzWBD0OKB3_OPy_Gok9yp8Kdag/edit?usp=sharing)**
 -  [Minggu 1](#Minggu_1)  **Instalasi Linux (VM) Baseline Audit**
 
 ```javascript
