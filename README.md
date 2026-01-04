@@ -12,6 +12,7 @@
 
 ## 📋 Dokumentasi Setiap Minggu 
 -  [Link Laporan ](#Link_Laporan)  **(https://drive.google.com/file/d/1i7Qx2GgxNrYhgzOOa6tjpmkz_9ovfHyx/view?usp=sharing)**
+-  [Link Poster ](#Link_Poster) **(https://drive.google.com/file/d/18xrMtQ_c0s5rxEtihnwWg6esosYuMEON/view?usp=sharing)**
 -  [Minggu 1](#Minggu_1)  **Instalasi Linux (VM) Baseline Audit**
 
 ```javascript
